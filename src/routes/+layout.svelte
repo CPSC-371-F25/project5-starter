@@ -8,4 +8,9 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
+<nav>
+	<a href="/">Menu</a>
+	<a href="/admin/new">New menu item</a>
+</nav>
+
 {@render children()}

@@ -3,9 +3,15 @@
 
 generator client {
   provider = "prisma-client"
-  output   = "../../generated/prisma"
+  output   = "../src/generated/prisma" // output to /src/generated/prisma
 }
 
 datasource db {
   provider = "sqlite"
+}
+
+model MenuItem {
+  id    Int   @id @default(autoincrement())
+  name  String
+  price Float
 }
